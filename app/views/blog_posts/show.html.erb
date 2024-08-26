@@ -1,2 +1,8 @@
+<%= link_to 'bearbeiten', edit_blog_post_path(@blog_post) %>
+
 <h1><%= @blog_post.title %></h1>
+<div>
 <%= @blog_post.body %>
+</div>
+
+<%= link_to 'zur Übersicht', root_path %>

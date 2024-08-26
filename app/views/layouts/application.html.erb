@@ -18,6 +18,21 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <% if user_signed_in? %>
+      <div>
+        <%= link_to 'neuer Blog Eintrag', new_blog_post_path %>
+
+        <%= button_to 'Logout', destroy_user_session_path, method: :delete %>
+      </div>
+    <% else %>
+      <div>
+        <%= link_to 'Login', new_user_session_path %>
+      </div>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
