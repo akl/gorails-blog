@@ -59,5 +59,5 @@ end
 gem "aws-sdk-s3", require: false
 
 gem "devise", "~> 4.9"
-gem "tailwindcss-rails", "~> 2.7"
+gem "tailwindcss-rails", "~> 3.0"
 gem "pg", "~> 1.5"
